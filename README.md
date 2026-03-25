@@ -16,13 +16,10 @@ There are a few lines of text you'll need to change in order for this to work fo
     - Note: `<branch name>` cannot be set to "default", as Steam does not allow automatic pushes of builds to the defualt branch, so you must have a seperate branch to push to. Alternatively, if you do not want the build to automatically go live to any branch, the `"Set Live"` line can be omitted.
 
 
+The first time you run `quickbuild.bat` it will prompt you to enter your steam username, which it will save in a file called `steamuser.txt`. If you need to change the username used for login simply edit the contents of `steamuser.txt`. 
+
+
     
 ## Use
 
 After you've finished making the necessary edits to the script files, simply place your build contents in the `_build` folder, and run `quickbuild.bat`. Your game will be built and uploaded to Steam!
-
-
-### Note:
-
-The first time you run `quickbuild.bat` it will prompt you to enter your steam username, which it will save in a file called `steamuser.txt`. If you need to change the username used for login simply edit the contents of `steamuser.txt`. 
-
