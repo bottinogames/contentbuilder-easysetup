@@ -11,14 +11,18 @@ Download the repository and drop the `content-builder` folder wherever you'd lik
 ## Setup
 
 There are a few lines of text you'll need to change in order for this to work for your project, so I'll list those out here:
- - `login.bat`: You'll need to change `<username>` to the steam username that will be used to login to Steamworks.
- - `quickbuild.bat`: Again, `<username>` here will need to be changed to the steam username to be used for login.
  - `scripts\depot_build_content.vdf`: You'll need to set the `<depot id>` to the ID of the depot you'll be building to, as found in Steamworks.
  - `scripts\quickbuild.vdf`: Here `<app id>` and `<depot id>` will need to be set to their corresponding ID's as shown in Steamworks. `<branch name>` should be set to the name of the beta branch you'd like to have the build automatically pushed to.
     - Note: `<branch name>` cannot be set to "default", as Steam does not allow automatic pushes of builds to the defualt branch, so you must have a seperate branch to push to. Alternatively, if you do not want the build to automatically go live to any branch, the `"Set Live"` line can be omitted.
 
-After those edits have been made, `login.bat` will also need to be run at least once on any computer that needs to use `quickbuild.bat`. This will ensure that the login credentials for steamcmd are properly cached.
 
+    
 ## Use
 
 After you've finished making the necessary edits to the script files, simply place your build contents in the `_build` folder, and run `quickbuild.bat`. Your game will be built and uploaded to Steam!
+
+
+### Note:
+
+The first time you run `quickbuild.bat` it will prompt you to enter your steam username, which it will save in a file called `steamuser.txt`. If you need to change the username used for login simply edit the contents of `steamuser.txt`. 
+
