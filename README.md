@@ -1,6 +1,6 @@
-# Content Builder made easy
+# Content Builder Made Easy
 
-This is a (nearly) drag and drop setup for a Steam's content builder
+This is a (nearly) drag and drop setup for Steam's Content Builder
 
 Included is a pre-made build script and depot description, a gitignore file so this can be dropped in your game repository without worry, as well as a few .bat files to get you started (if you're on windows).
 
