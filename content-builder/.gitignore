@@ -2,3 +2,4 @@
 !builder/steamcmd.exe
 !scripts/*
 !/*/your-build-goes-here.txt
+steamuser.txt
